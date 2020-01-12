@@ -2,7 +2,10 @@ let w = 400;
 let dt;
 function setup() 
 {
-    createCanvas(w , w);
+    var cnv = createCanvas(w, w);
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - height) / 2;
+    cnv.position(x, y);
     dt = 1.0/60;
 }
  
