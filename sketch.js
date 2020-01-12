@@ -1,11 +1,9 @@
-let w = 400;
 let dt;
+
 function setup() 
 {
-    var cnv = createCanvas(w, w);
-    var x = (windowWidth - width) / 2;
-    var y = (windowHeight - height) / 2;
-    cnv.position(x, y);
+    let w = 0.25;
+    createCanvas(window.innerWidth * (1 - w) , window.innerHeight  * (1 - w));
     dt = 1.0/60;
 }
  
@@ -51,6 +49,13 @@ function draw()
 function sqrt_(x)
 {
     return Math.pow(2 , Math.log2(x)/2);
+}
+
+function pow_2(x)
+{
+    let c = Math.log(2);
+
+    return c + c*c
 }
 
 function O(x , y , r = 10)
