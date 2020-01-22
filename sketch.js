@@ -2,6 +2,8 @@ let dt;
 
 function setup() 
 {
+    let s = 0.125;
+    createCanvas(window.Innerwidth * (1 - 2 * s) , window.Innerheight * (1 - 2 * s));
     dt = 1.0/60;
 }
  
