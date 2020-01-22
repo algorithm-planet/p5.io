@@ -2,7 +2,6 @@ let dt;
 
 function setup() 
 {
-    let s = 0.125;
     createCanvas(window.innerWidth, window.innerHeight);
     dt = 1.0/60;
 }
