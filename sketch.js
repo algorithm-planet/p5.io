@@ -2,8 +2,6 @@ let dt;
 
 function setup() 
 {
-    let w = 0.25;
-    createCanvas(window.innerWidth * (1 - w) , window.innerHeight  * (1 - w));
     dt = 1.0/60;
 }
  
