@@ -45,7 +45,7 @@ function draw()
 
 function O(x , y , r = 10)
 {
-    strokeWeight(0.1);
+    noStroke();
     ellipse(x ,y , r , r);
 }
 
