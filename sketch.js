@@ -3,6 +3,9 @@ function setup()
 {
     createCanvas(windowWidth, windowHeight);
 }
+function windowResized() {
+  centerCanvas();
+}
  
 let x0  = 0 , y0 = 0;
 let B = true;
