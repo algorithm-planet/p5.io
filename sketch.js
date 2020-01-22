@@ -3,10 +3,6 @@ function setup()
 {
     createCanvas(windowWidth, windowHeight);
 }
-function windowResized() {
-  centerCanvas();
-}
- 
 let x0  = 0 , y0 = 0;
 let B = true;
 
@@ -40,23 +36,12 @@ function draw()
 
     let nx = x1 - x0,
         ny = y1 - y0;
-    let r = 2 * sqrt_(nx * nx + ny * ny);
+    let r = 2 * Math.sqrt(nx * nx + ny * ny);
 
     fill(255 ,100);
     O(x0 , y0 , r)
 }
 
-function sqrt_(x)
-{
-    return Math.pow(2 , Math.log2(x)/2);
-}
-
-function pow_2(x)
-{
-    let c = Math.log(2);
-
-    return c + c*c
-}
 
 function O(x , y , r = 10)
 {
